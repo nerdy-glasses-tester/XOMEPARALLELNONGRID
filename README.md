@@ -1,7 +1,8 @@
 Page Object Model Selenium Appium Framework using Java, TestNG
 
-***As of Jun 6th 2019, the selenium web and appium mobile tests are passing after updating to new locators.
+Nov 3rd 2019 updated selenium tests can run in parallel on a single computer without using selenium grid.
+An alternative without having to purchase more computers.
 
 mvn clean
 mvn dependency:resolve
-mvn compile test -Dsurefire.SuiteXmlFiles=/src/test/resources/TestNG2.xml
+mvn compile test -Dsurefire.SuiteXmlFiles=/src/test/resources/TestNG3.xml
