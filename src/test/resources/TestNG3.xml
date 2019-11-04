@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="XOME Suite" parallel="tests" thread-count="2" data-provider-thread-count="2" verbose="10">
+
+<listeners>
+    <listener class-name="common.TestListener" />
+</listeners>  
+    
+
+	<test name = "Tests1" preserve-order="true" group-by-instances="true">
+		<classes>
+		    <class name="webTests.SearchforSpecificProperty" />
+       	</classes>
+	</test>
+	
+	<test name = "Tests2" preserve-order="true" group-by-instances="true">
+		<classes>
+       	<class name="webTests.FilterMoreResultsByKeyword" />
+		</classes>
+	</test>
+	
+	<test name = "Tests3" preserve-order="true" group-by-instances="true">
+		<classes>
+        	<class name="webTests.FilterMoreResultsBySquareFeet" />
+		</classes>
+	</test>
+
+	<test name = "Tests4" preserve-order="true" group-by-instances="true">
+		<classes>
+       	<class name="webTests.FilterMoreResultsByYear" />	
+       	</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-XOME_Suite">
+              <span class="suite-name border-failed">XOME Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-XOME_Suite">
+                    <span>TestNG3.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-XOME_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-XOME_Suite">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-XOME_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-XOME_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-XOME_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-XOME_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 1 failed,  3 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-XOME_Suite" class="hide-methods failed suite-XOME_Suite"> (hide)</a> <!-- hide-methods failed suite-XOME_Suite -->
+                      <a href="#" panel-name="suite-XOME_Suite" class="show-methods failed suite-XOME_Suite"> (show)</a> <!-- show-methods failed suite-XOME_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-XOME_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-XOME_Suite" title="webTests.SearchforSpecificProperty" hash-for-method="searchSpecificProperty(12512 Brighton Pl Tustin, CA 92780)">searchSpecificProperty(12512 Brighton Pl Tustin, CA 92780)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-XOME_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-XOME_Suite" class="hide-methods skipped suite-XOME_Suite"> (hide)</a> <!-- hide-methods skipped suite-XOME_Suite -->
+                      <a href="#" panel-name="suite-XOME_Suite" class="show-methods skipped suite-XOME_Suite"> (show)</a> <!-- show-methods skipped suite-XOME_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-XOME_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-XOME_Suite" title="webTests.Login_NegativeTests" hash-for-method="loginWrongPwd">loginWrongPwd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-XOME_Suite" title="webTests.SignUp_NegativeTests" hash-for-method="signUpWithInvalidEmail">signUpWithInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-XOME_Suite" title="webTests.SignUp_NegativeTests" hash-for-method="signUpWithInvalidPassword">signUpWithInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-XOME_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-XOME_Suite" class="hide-methods passed suite-XOME_Suite"> (hide)</a> <!-- hide-methods passed suite-XOME_Suite -->
+                      <a href="#" panel-name="suite-XOME_Suite" class="show-methods passed suite-XOME_Suite"> (show)</a> <!-- show-methods passed suite-XOME_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-XOME_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-XOME_Suite" title="webTests.Login_NegativeTests" hash-for-method="loginBlankFields(, )">loginBlankFields(, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-XOME_Suite" title="webTests.SignUp_NegativeTests" hash-for-method="signUpWithBlankFields(test, test, sqatester2018@gmail.com, test)">signUpWithBlankFields(test, test, sqatester2018@gmail.com, test)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-XOME_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-XOME_Suite" class="panel XOME_Suite">
+          <div class="suite-XOME_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">webTests.SearchforSpecificProperty</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchSpecificProperty(12512 Brighton Pl Tustin, CA 92780)">
+                  </a> <!-- searchSpecificProperty(12512 Brighton Pl Tustin, CA 92780) -->
+                  <span class="method-name">searchSpecificProperty</span>
+                  <span class="parameters">(12512 Brighton Pl Tustin, CA 92780)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.address-line-1.first-field.bolded (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at webPageObjects.Search.searchandVerifyAddressSearched(Search.java:156)
+	at webTests.SearchforSpecificProperty.searchSpecificProperty(SearchforSpecificProperty.java:41)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.address-line-1.first-field.bolded&quot;}
+  (Session info: chrome=78.0.3904.70)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;macbookpros-MacBook-Pro.local&apos;, ip: &apos;2606:6000:fcc2:dc00:59cc:86ac:d81d:4370%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/r_/gj592kgx0x7...}, goog:chromeOptions: {debuggerAddress: localhost:53120}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 88aa020cdc2a2fcf7184af3ade81abf9
+*** Element info: {Using=css selector, value=div.address-line-1.first-field.bolded}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 17 more
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XOME_Suite-class-failed -->
+          <div class="suite-XOME_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">webTests.SignUp_NegativeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithInvalidEmail">
+                  </a> <!-- signUpWithInvalidEmail -->
+                  <span class="method-name">signUpWithInvalidEmail</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at base.TestBase.tearDown(TestBase.java:322)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithInvalidPassword">
+                  </a> <!-- signUpWithInvalidPassword -->
+                  <span class="method-name">signUpWithInvalidPassword</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at base.TestBase.tearDown(TestBase.java:322)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XOME_Suite-class-skipped -->
+          <div class="suite-XOME_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">webTests.Login_NegativeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWrongPwd">
+                  </a> <!-- loginWrongPwd -->
+                  <span class="method-name">loginWrongPwd</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at base.TestBase.tearDown(TestBase.java:322)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XOME_Suite-class-skipped -->
+          <div class="suite-XOME_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">webTests.SignUp_NegativeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithBlankFields(test, test, sqatester2018@gmail.com, test)">
+                  </a> <!-- signUpWithBlankFields(test, test, sqatester2018@gmail.com, test) -->
+                  <span class="method-name">signUpWithBlankFields</span>
+                  <span class="parameters">(test, test, sqatester2018@gmail.com, test)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XOME_Suite-class-passed -->
+          <div class="suite-XOME_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">webTests.Login_NegativeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginBlankFields(, )">
+                  </a> <!-- loginBlankFields(, ) -->
+                  <span class="method-name">loginBlankFields</span>
+                  <span class="parameters">(, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-XOME_Suite-class-passed -->
+        </div> <!-- panel XOME_Suite -->
+        <div panel-name="test-xml-XOME_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/macbookpro/eclipse-workspace/XOMEPARALLELNONGRID/src/test/resources/TestNG3.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;XOME Suite&quot; parallel=&quot;tests&quot; data-provider-thread-count=&quot;2&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;common.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Subset of tests&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;webTests.Login_NegativeTests&quot;/&gt;
+      &lt;class name=&quot;webTests.SignUp_NegativeTests&quot;/&gt;
+      &lt;class name=&quot;webTests.SearchforSpecificProperty&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Subset of tests --&gt;
+&lt;/suite&gt; &lt;!-- XOME Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-XOME_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for XOME Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Subset of tests (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-XOME_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for XOME Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">P3</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginBlankFields</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">signUpWithBlankFields</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">signUpWithInvalidEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginWrongPwd</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchSpecificProperty</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">signUpWithInvalidPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchSpecificProperty</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-XOME_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for XOME Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_XOME_Suite');
+function tableData_XOME_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchSpecificProperty')
+data.setCell(0, 2, 'webTests.SearchforSpecificProperty')
+data.setCell(0, 3, 63340);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'signUpWithBlankFields')
+data.setCell(1, 2, 'webTests.SignUp_NegativeTests')
+data.setCell(1, 3, 3005);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginBlankFields')
+data.setCell(2, 2, 'webTests.Login_NegativeTests')
+data.setCell(2, 3, 2743);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'signUpWithInvalidPassword')
+data.setCell(3, 2, 'webTests.SignUp_NegativeTests')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginWrongPwd')
+data.setCell(4, 2, 'webTests.Login_NegativeTests')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'signUpWithInvalidEmail')
+data.setCell(5, 2, 'webTests.SignUp_NegativeTests')
+data.setCell(5, 3, 0);
+window.suiteTableData['XOME_Suite']= { tableData: data, tableDiv: 'times-div-XOME_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-XOME_Suite">
+              </div> <!-- times-div-XOME_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-XOME_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for XOME Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-XOME_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-XOME_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">webTests.Login_NegativeTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginWrongPwd</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webTests.SignUp_NegativeTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">signUpWithInvalidEmail</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">signUpWithInvalidPassword</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webTests.Login_NegativeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setDriver</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginBlankFields(, )</span>
+                <span class="method-start">7609 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">OnFailure([TestResult name=loginBlankFields status=SUCCESS method=Login_NegativeTests.loginBlankFields(java.la...)</span>
+                <span class="method-start">10353 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10354 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setDriver</span>
+                <span class="method-start">10418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">OnFailure([TestResult name={null} status=CREATED method=Login_NegativeTests.loginWrongPwd(java.lang.String, ja...)</span>
+                <span class="method-start">13149 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13149 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webTests.SignUp_NegativeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setDriver</span>
+                <span class="method-start">13200 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signUpWithBlankFields(test, test, sqatester2018@gmail.com, test)</span>
+                <span class="method-start">15978 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">OnFailure([TestResult name=signUpWithBlankFields status=SUCCESS method=SignUp_NegativeTests.signUpWithBlankFie...)</span>
+                <span class="method-start">18983 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18983 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setDriver</span>
+                <span class="method-start">19031 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">OnFailure([TestResult name={null} status=CREATED method=SignUp_NegativeTests.signUpWithInvalidEmail(java.lang....)</span>
+                <span class="method-start">22015 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22016 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setDriver</span>
+                <span class="method-start">22049 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">OnFailure([TestResult name={null} status=CREATED method=SignUp_NegativeTests.signUpWithInvalidPassword(java.la...)</span>
+                <span class="method-start">24888 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24888 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webTests.SearchforSpecificProperty</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setDriver</span>
+                <span class="method-start">24916 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchSpecificProperty(12512 Brighton Pl Tustin, CA 92780)</span>
+                <span class="method-start">28733 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">OnFailure([TestResult name=searchSpecificProperty status=FAILURE method=SearchforSpecificProperty.searchSpecif...)</span>
+                <span class="method-start">92074 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">92074 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [XOME Suite]" parallel="tests" data-provider-thread-count="2">
+  <listeners>
+    <listener class-name="common.TestListener"/>
+  </listeners>
+  <test thread-count="2" verbose="10" name="Tests1(failed)" parallel="tests">
+    <classes>
+      <class name="webTests.SearchforSpecificProperty">
+        <methods>
+          <include name="setDriver"/>
+          <include name="searchSpecificProperty" invocation-numbers="0"/>
+          <include name="OnFailure"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- webTests.SearchforSpecificProperty -->
+    </classes>
+  </test> <!-- Tests1(failed) -->
+  <test thread-count="2" verbose="10" name="Tests2(failed)" parallel="tests">
+    <classes>
+      <class name="webTests.FilterMoreResultsByKeyword">
+        <methods>
+          <include name="setDriver"/>
+          <include name="filterResultsByKeyword" invocation-numbers="0"/>
+          <include name="OnFailure"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- webTests.FilterMoreResultsByKeyword -->
+    </classes>
+  </test> <!-- Tests2(failed) -->
+  <test thread-count="2" verbose="10" name="Tests3(failed)" parallel="tests">
+    <classes>
+      <class name="webTests.FilterMoreResultsBySquareFeet">
+        <methods>
+          <include name="filterResultsBySqFeet" invocation-numbers="0"/>
+          <include name="setDriver"/>
+          <include name="OnFailure"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- webTests.FilterMoreResultsBySquareFeet -->
+    </classes>
+  </test> <!-- Tests3(failed) -->
+  <test thread-count="2" verbose="10" name="Tests4(failed)" parallel="tests">
+    <classes>
+      <class name="webTests.FilterMoreResultsByYear">
+        <methods>
+          <include name="setDriver"/>
+          <include name="OnFailure"/>
+          <include name="filterResultsByYear" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- webTests.FilterMoreResultsByYear -->
+    </classes>
+  </test> <!-- Tests4(failed) -->
+</suite> <!-- Failed suite [XOME Suite] -->

@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 7, Errors: 0, Skipped: 3, Time elapsed: 117.998 s <<< FAILURE! - in TestSuite
+tearDown(webTests.Login_NegativeTests)  Time elapsed: 2.748 s  <<< FAILURE!
+java.lang.NullPointerException
+
+tearDown(webTests.Login_NegativeTests)  Time elapsed: 5.54 s  <<< FAILURE!
+java.lang.NullPointerException
+
+tearDown(webTests.SignUp_NegativeTests)  Time elapsed: 3.005 s  <<< FAILURE!
+java.lang.NullPointerException
+
+tearDown(webTests.SignUp_NegativeTests)  Time elapsed: 6.038 s  <<< FAILURE!
+java.lang.NullPointerException
+
+tearDown(webTests.SignUp_NegativeTests)  Time elapsed: 8.91 s  <<< FAILURE!
+java.lang.NullPointerException
+
+searchSpecificProperty(webTests.SearchforSpecificProperty)  Time elapsed: 63.341 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: div.address-line-1.first-field.bolded (tried for 60 second(s) with 500 milliseconds interval)
+	at webTests.SearchforSpecificProperty.searchSpecificProperty(SearchforSpecificProperty.java:41)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div.address-line-1.first-field.bolded"}
+  (Session info: chrome=78.0.3904.70)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'macbookpros-MacBook-Pro.local', ip: '2606:6000:fcc2:dc00:59cc:86ac:d81d:4370%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/r_/gj592kgx0x7...}, goog:chromeOptions: {debuggerAddress: localhost:53120}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 88aa020cdc2a2fcf7184af3ade81abf9
+*** Element info: {Using=css selector, value=div.address-line-1.first-field.bolded}
+	at webTests.SearchforSpecificProperty.searchSpecificProperty(SearchforSpecificProperty.java:41)
+
+tearDown(webTests.SearchforSpecificProperty)  Time elapsed: 63.341 s  <<< FAILURE!
+java.lang.NullPointerException
+

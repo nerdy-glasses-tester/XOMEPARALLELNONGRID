@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [XOME Suite]" parallel="tests" data-provider-thread-count="2">
+  <listeners>
+    <listener class-name="common.TestListener"/>
+  </listeners>
+  <test thread-count="2" verbose="0" name="Subset of tests(failed)" parallel="tests">
+    <classes>
+      <class name="webTests.SignUp_NegativeTests">
+        <methods>
+          <include name="signUpWithInvalidEmail"/>
+          <include name="setDriver"/>
+          <include name="OnFailure"/>
+          <include name="signUpWithInvalidPassword"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- webTests.SignUp_NegativeTests -->
+      <class name="webTests.SearchforSpecificProperty">
+        <methods>
+          <include name="setDriver"/>
+          <include name="searchSpecificProperty" invocation-numbers="0"/>
+          <include name="OnFailure"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- webTests.SearchforSpecificProperty -->
+      <class name="webTests.Login_NegativeTests">
+        <methods>
+          <include name="loginWrongPwd"/>
+          <include name="setDriver"/>
+          <include name="OnFailure"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- webTests.Login_NegativeTests -->
+    </classes>
+  </test> <!-- Subset of tests(failed) -->
+</suite> <!-- Failed suite [XOME Suite] -->
